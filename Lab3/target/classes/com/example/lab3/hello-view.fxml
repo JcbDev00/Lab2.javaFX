@@ -1,12 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab3.HelloController">
    <children>
-      <Button fx:id="btnMain" layoutX="274.0" layoutY="188.0" mnemonicParsing="false" onAction="#onHelloButtonClick" text="Kliknij mnie!" />
-      <TextField fx:id="txtLicznik" layoutX="240.0" layoutY="104.0" />
+      <Button fx:id="btnMain" layoutX="274.0" layoutY="188.0" mnemonicParsing="false" onAction="#onHelloButtonClick" text="Policz" />
+      <TextField fx:id="expField" layoutX="256.0" layoutY="313.0" />
+      <CheckBox fx:id="typeA" layoutX="274.0" layoutY="90.0" mnemonicParsing="false" text="Blacha stalowa" />
+      <CheckBox fx:id="typeB" layoutX="274.0" layoutY="127.0" mnemonicParsing="false" text="Blacha stalowa nierdzewna" />
+      <TextField fx:id="heightField" layoutX="27.0" layoutY="146.0" />
+      <TextField fx:id="radiusField" layoutX="27.0" layoutY="86.0" />
+      <Text layoutX="27.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Promień walca (cm)" />
+      <Text layoutX="27.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wysokość walca (cm)" />
+      <Text layoutX="27.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Grubość blachy (mm)" />
+      <TextField fx:id="sizeField" layoutX="27.0" layoutY="213.0" />
+      <Text layoutX="273.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wybierz typ blachy" />
+      <TextField fx:id="weightField" layoutX="256.0" layoutY="265.0" />
+      <Text layoutX="165.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ciężar walca" />
+      <Text layoutX="148.0" layoutY="330.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Koszt materiału" />
    </children>
 </AnchorPane>
